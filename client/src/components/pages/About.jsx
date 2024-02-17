@@ -8,6 +8,7 @@ import sumi1 from "../assets/about/sumimamimage.JPG"
 import "./About.css";
 import WhatsApp from "../whatsapp/WhatsApp";
 import FloatingMailIcon from "./email floating icon/Floating";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -48,8 +49,9 @@ export default function About() {
                   <h1 class="display-2 text-white animated slideInDown mb-4">
                     The Best Kindergarten School For Your Child
                   </h1>
-                  <a href="ourstory" className="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn More</a>
-                <a href="franchise" className="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Franchise</a>
+                  <Link className="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft" to='/contact'>Learn More</Link>
+      
+<Link className="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight" to="/franchise"> Our Franchise</Link>
                 </div>
               </div>
             </div>
@@ -124,9 +126,8 @@ export default function About() {
                 </p>
                 <div className="row g-4 align-items-center">
                   <div className="col-sm-6">
-                    <a className="btn btn-primary rounded-pill py-3 px-5" href>
-                      Read More
-                    </a>
+                  <Link to="/curriculum" className="btn btn-primary rounded-pill py-3 px-5" > Read More</Link>
+
                   </div>
                   <div className="col-sm-6">
                     <div className=" d-flex align-items-center">
@@ -234,9 +235,8 @@ export default function About() {
                 </p>
                 <div className="row g-4 align-items-center">
                   <div className="col-sm-6">
-                    <a className="btn btn-primary rounded-pill py-3 px-5" href>
-                      Read More
-                    </a>
+               
+                    <Link to="/curriculum" className="btn btn-primary rounded-pill py-3 px-5" > Read More</Link>
                   </div>
                   <div className="col-sm-6">
                     <div className="d-flex align-items-center">

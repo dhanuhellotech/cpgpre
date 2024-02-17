@@ -1,5 +1,6 @@
 import React from 'react'
 import sumiimg from '../../../assets/sumimam.jpg'
+import { Link } from 'react-router-dom'
 export default function HomeAbout() {
   return (
     <div>
@@ -16,7 +17,8 @@ each child to form positive relationships with
 others</p>
           <div className="row g-4 align-items-center">
             <div className="col-sm-6">
-              <a className="btn btn-primary rounded-pill py-3 px-5" href="ourstory">Read More</a>
+    
+              <Link to="/ourstory" className="btn btn-primary rounded-pill py-3 px-5">Read More</Link>
             </div>
             <div className="col-sm-6">
               <div className="d-flex align-items-center">

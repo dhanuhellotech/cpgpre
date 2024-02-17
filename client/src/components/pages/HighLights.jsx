@@ -9,7 +9,7 @@ import ImageGallery from '../common/highlights/ImageGallery'
 import VideoSliderCard from '../common/highlights/videoslider/VideoSliderCard '
 import WhatsApp from '../whatsapp/WhatsApp'
 import FloatingMailIcon from './email floating icon/Floating'
-
+import {Link} from 'react-router-dom'
 export default function Highlights() {
   const handleButtonClick = (eventName) => {
     // Handle button click logic based on the event name
@@ -47,96 +47,20 @@ export default function Highlights() {
       <div class="row justify-content-start">
                                 <div class="col-10 col-lg-8">
                                     <h1 class="display-2 text-white animated slideInDown mb-4">The Best Kindergarten School For Your Child</h1>
-                                    <a href="curriculum" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Learn More</a>
-                                    <a href="admission" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">For Admission</a>
-                                </div>
+                                    <Link className="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft" to='/contact'>Learn More</Link>
+      
+      <Link className="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight" to="/admission"> For Admission</Link>                                </div>
                             </div>
     </div>
   </div>
     </div>
-  {/* Page Header End */}
-{/* about  */}
 
-  {/* About Start */}
- 
-  {/* About End */}
-    {/* About Start */}
-
-  {/* About End */}
-  {/* Call To Action Start */}
-  {/* <div className="container-xxl py-5">
-  <div className="container">
-    <div className="bg-light rounded">
-      <div className="row g-0 align-items-center">
-        <div className="wow fadeIn text-center" data-wow-delay="0.5s">
-          <div className="h-100 d-flex flex-column text-center justify-content-center p-5">
-            <h1 className="mb-4">Game Schooling</h1>
-            <h1 className="mb-4">5 Step Teaching Method</h1>
-
-            <div className="row g-4">
-              <div className="col">
-                <div className="card">
-                  <div className="card-body">
-                    <button className="btn btn-primary" onClick={() => handleButtonClick("ANNUAL DAY")}>
-                      ANNUAL DAY
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="card">
-                  <div className="card-body">
-                    <button className="btn btn-primary" onClick={() => handleButtonClick("SPORTS DAY")}>
-                      SPORTS DAY
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="card">
-                  <div className="card-body">
-                    <button className="btn btn-primary" onClick={() => handleButtonClick("TEACHERS DAY")}>
-                      TEACHERS DAY
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="card">
-                  <div className="card-body">
-                    <button className="btn btn-primary" onClick={() => handleButtonClick("CHILDRENS DAY")}>
-                      CHILDRENS DAY
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="card">
-                  <div className="card-body">
-                    <button className="btn btn-primary" onClick={() => handleButtonClick("REPUBLIC DAY")}>
-                      REPUBLIC DAY
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> */}
 <ImageGallery/>
 
 <VideoSliderCard/>
 
 
 
-  {/* Call To Action End */}
-  {/* Team Start */}
-
-
-  {/* Footer Start */}
 <Footer/>
   {/* Footer End */}
   {/* Back to Top */}

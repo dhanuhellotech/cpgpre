@@ -8,6 +8,7 @@ import icon1 from "../../../assets/apartment.png";
 import icon2 from "../../../assets/business.png";
 import icon4 from "../../../assets/international.png";
 import icon5 from "../../../assets/curriculum-vitae.png";
+import { Link } from "react-router-dom";
 export default function FranAbout() {
   useEffect(() => {
     AOS.init({
@@ -109,12 +110,8 @@ export default function FranAbout() {
                 </p>
                 <div className="row g-4 align-items-center">
                   <div className="col-sm-6">
-                    <a
-                      className="btn btn-primary rounded-pill py-3 px-5"
-                      href="/"
-                    >
-                      Read More
-                    </a>
+            
+                    <Link  className="btn btn-primary rounded-pill py-3 px-5" to='/'>    Read More</Link>
                   </div>
                   <div className="col-sm-6">
                     <div className="d-flex align-items-center">

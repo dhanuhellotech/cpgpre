@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom'; // Import Link
-import logo from "../assets/circlelogo.jpg";
+import logo from "../assets/logo/schol logo.png";
 import { FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import './navbar.css'
 export default function Navbar() {

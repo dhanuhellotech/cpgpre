@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';  // Add this line
-
+import {Link }from 'react-router-dom'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Carosuel.css'
@@ -59,7 +59,8 @@ export default function Carousel() {
               <div className="col-10 col-lg-8">
                 <h1 className="display-2 text-white animated slideInDown mb-4 tophead">Make A Brighter Future For Your Child</h1>
                 <p className="fs-5 fw-medium text-white mb-4 pb-2 toppara">Focuses on child-led activities and project-based learning. Content should encourage exploration, creativity, and collaboration.</p>
-                <a href="admission" className="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Admission Open For 24-25</a>
+                {/* <a href="admission" className="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">Admission Open For 24-25</a> */}
+                <Link className="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft" to='/admission'>Admission Open For 24-25</Link>
                 {/* <a href="franchise" className="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our Franchise</a> */}
               </div>
             </div>

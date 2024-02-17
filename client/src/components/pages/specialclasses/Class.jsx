@@ -33,10 +33,10 @@ export default function Class() {
         <div className="container-xxl py-5 page-header position-relative mb-5">
           <div className="container py-5">
             <h1 className="display-2 text-white animated slideInDown mb-4">
-              Admission
+ Summer Classes
             </h1>
             <nav aria-label="breadcrumb" className="animated slideInDown">
-              <ol className="breadcrumb">
+              {/* <ol className="breadcrumb">
                 <li className="breadcrumb-item">
                   <a href="#">Home</a>
                 </li>
@@ -49,7 +49,7 @@ export default function Class() {
                 >
                   Admission
                 </li>
-              </ol>
+              </ol> */}
             </nav>
           </div>
         </div>

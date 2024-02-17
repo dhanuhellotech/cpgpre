@@ -251,12 +251,8 @@ export default function Admission() {
                     </p>
                     <div className="row g-4 align-items-center">
                       <div className="col-sm-6">
-                        <a
-                          className="btn btn-primary rounded-pill py-3 px-5"
-                          href="ourstory"
-                        >
-                          Read More
-                        </a>
+                 
+                        <Link  className="btn btn-primary rounded-pill py-3 px-5" to='/ourstory'>           Read More</Link>
                       </div>
                       <div className="col-sm-6">
                         <div className="d-flex align-items-center">
