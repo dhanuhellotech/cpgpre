@@ -110,17 +110,19 @@ export default function About() {
   </div>
 </div>
         {/* About Start */}
-        <div className="container-xxl py-5">
+        <div className="container-xxl py-5" style={{ backgroundImage: `url('assets/img/white-brick-wall-textures-background.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
           <div className="container">
             <div className="row g-5 align-items-center">
               <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <h1 className="mb-4"> Our Vision</h1>
-                <p>
-                  Our vision is to provide the fundamental of Education for at
-                  an affordable cost and no royalty model to empower Women
-                  entrepreuners.
+                <p style={{fontWeight:'bolder',color:'black',fontSize:'clamp(15px,2vw,18px)'}}>
+                Our vision at G Preschool is clear and unwavering: we aim to democratize access to quality education by offering foundational learning at an affordable cost. Central to this vision is our commitment to a unique business model that empowers women entrepreneurs. We believe in breaking barriers and creating opportunities for women to thrive in the realm of business ownership without the burden of royalties.
+
+By providing a pathway for women entrepreneurs to establish and grow their own preschools under our brand, we are not only advancing gender equality but also fostering economic empowerment within communities. Our approach not only benefits the individual franchise owners but also extends to the families they serve, as affordable education becomes more accessible to children from diverse backgrounds.
+
+Through this visionary approach, we are not only shaping the future of education but also contributing to the broader goal of creating a more equitable society. At G Preschool, we see a future where every child has the opportunity to receive a quality education, and every woman has the chance to realize her entrepreneurial dreams, thus enriching both lives and communities alike.
                 </p>
-                <p>
+                <p style={{fontWeight:'bolder',color:'black',fontSize:'clamp(15px,2vw,18px)'}}>
                   To Provide quality early Years of education in a warm, safe
                   and creative setting
                 </p>
@@ -184,7 +186,7 @@ export default function About() {
         </div>
         {/* About End */}
         {/* About Start */}
-        <div className="container-xxl py-5">
+        <div className="container-xxl py-5" style={{ backgroundImage: `url('assets/img/white-brick-wall-textures-background.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
           <div className="container">
             <div className="row g-5 align-items-center">
               <div
@@ -194,8 +196,9 @@ export default function About() {
                 <div className="row">
                   <div className="col-12 text-center">
                     <img
-                      className="img-fluid w-75 rounded-circle bg-light p-3"
+                      className="img-fluid  rounded-circle bg-light p-3"
                       src="assets/img/about-1.jpg"
+                      
                       alt
                     />
                   </div>
@@ -223,13 +226,17 @@ export default function About() {
               </div>
               <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <h1 className="mb-4"> Our Mission</h1>
-                <p>
-                  Our mission is to ensure high profit (ROI) for all our
-                  franchise partners and adding a strong foundation of trust in
-                  every movement at G Preschool, which motivates our staff to
-                  deliver their best
+                <p style={{fontWeight:'bolder',color:'black',fontSize:'clamp(15px,2vw,18px)'}}>
+             
+Our mission at G Preschool is twofold: to guarantee high profitability (ROI) for all our franchise partners and to cultivate a robust foundation of trust in every facet of our operations. This dual focus serves as the cornerstone of our ethos, propelling us forward in our commitment to excellence. Central to our success is the unwavering dedication to fostering trust, both within our organization and with our valued partners.
+
+We recognize that trust is the bedrock upon which enduring relationships are built. It is this trust that motivates our staff to consistently deliver their best, knowing that their efforts are valued and supported. By instilling a culture of trust and transparency, we empower our team members to excel, driving innovation and continuous improvement across all aspects of our preschools.
+
+Moreover, our unwavering dedication to ensuring high profitability for our franchise partners underscores our commitment to their success. We understand that investing in a franchise is a significant decision, and we are fully committed to providing the support and resources necessary to maximize returns on that investment. Through strategic guidance, comprehensive training programs, and ongoing support, we equip our partners with the tools they need to thrive in their entrepreneurial endeavors.
+
+In essence, at G Preschool, trust and profitability are not mutually exclusive; rather, they are mutually reinforcing pillars that underpin our mission and drive our success. By upholding these principles in every decision and action we take, we continue to build a thriving community of preschools that enrich the lives of children and families while offering unparalleled opportunities for our franchise partners to prosper.
                 </p>
-                <p>
+                <p style={{fontWeight:'bolder',color:'black',fontSize:'clamp(15px,2vw,18px)'}}>
                   To Ignite the spark in children to foster lifelong
                   learning,critical thinking, independent enquiry and empathy
                 </p>

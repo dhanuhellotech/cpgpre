@@ -37,7 +37,7 @@ export default function Navbar() {
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
         <Link to="/" className="navbar-brand">
-          <img src={logo}   style={{ width: '65%' }} alt="Logo" />
+          <img src={logo}   style={{ width: '25%' }} alt="Logo" />
         </Link>
         <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
           <span className="navbar-toggler-icon" />

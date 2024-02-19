@@ -40,8 +40,8 @@ mongoose.connect(
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'dhanalakshmihellotech@gmail.com', // Replace with your Gmail email address
-    pass: 'uluq ovog pzhe wlhv' // Replace with your Gmail password
+    user: 'hrhellowtec@gmail.com', // Replace with your Gmail email address
+    pass: 'hgvg nmis mcnf egxq' // Replace with your Gmail password
   }
 });
 
@@ -113,7 +113,7 @@ async function  sendAdmissionEmail(formData) {
     `;
     const mailOptions = {
       from: ' ',
-      to: 'dhanalakshmibaby2001@gmail.com ', // Replace with recipient email address
+      to: 'thegpreschool@gmail.com ', // Replace with recipient email address
       subject: 'New Admission Form Submission',
       text: `Form Details:\n${formDetails}`
     };
@@ -150,8 +150,8 @@ app.post('/api/contact', async (req, res) => {
 async function sendContactEmail(formData) {
   try {
     const mailOptions = {
-      from: 'dhanalakshmihellotech@gmail.com',
-      to: 'dhanalakshmibaby2001@gmail.com', // Replace with recipient email address
+      from: '',
+      to: 'thegpreschool@gmail.com', // Replace with recipient email address
       subject: 'New Contact Form Submission',
       text: `Form Details:\nUsername: ${formData.username}\nEmail: ${formData.email}\nLocation: ${formData.location}\nMobile: ${formData.mobile}\nCity: ${formData.City}\nComments: ${formData.Comments}`
     };
@@ -186,8 +186,8 @@ app.post('/api/franschise', async (req, res) => {
 async function sendFranchiseEmail(formData) {
   try {
     const mailOptions = {
-      from: 'dhanalakshmihellotech@gmail.com',
-      to: 'dhanalakshmihellotech@gmail.com', // Replace with recipient email address
+      from: '', // Optional field
+      to: 'thegpreschool@gmail.com', // Replace with recipient email address
       subject: 'New Franschise Form Submission',
       text: `Form Details:\nUsername: ${formData.username}\nEmail: ${formData.email}\nState: ${formData.state}\nMobile: ${formData.mobile}\nCity: ${formData.City}\nInvestment: ${formData.investment}\nyesOrNo: ${formData.yesOrNo}`
     };
@@ -222,8 +222,8 @@ app.post('/api/enquiry', async (req, res) => {
 async function sendEmail(formData) {
   try {
     const mailOptions = {
-      from: 'dhanalakshmihellotech@gmail.com',
-      to: 'dhanalakshmihellotech@gmail.com', // Replace with recipient email address
+      from: '',
+      to: 'thegpreschool@gmail.com', // Replace with recipient email address
       subject: 'New Enquiry Form Submission',
       text: `Form Details:\nUsername: ${formData.username}\nEmail: ${formData.email}\nstate: ${formData.state}\nAddress: ${formData.Address}\nMobile: ${formData.mobile}\nchildname: ${formData.childname}\nchildgrade: ${formData.childgrade}\nmessage: ${formData.message}`
     };

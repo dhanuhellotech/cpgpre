@@ -8,7 +8,7 @@ export default function Facilities() {
 
   return (
     <div>
-      <div className="container-xxl py-5">
+      <div className="container-xxl school py-5">
         <div className="container">
           <div
             className="text-center mx-auto mb-5 wow fadeInUp"
@@ -74,13 +74,13 @@ export default function Facilities() {
               </div>
               <div className="facility-text bg-info">
                 <h3 className="text-info mb-3">Positive Learning</h3>
-                <p className="mb-0">Provide positive reinforcement through encouragement, praise, and acknowledgment of achievements.</p>
+                <p className="mb-0">Provide positive reinforcement through acknowledgment of achievements.</p>
               </div>
             </div>
             </div>
-            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+            {/* <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
 
-            {/* <div className="facility-item">
+            <div className="facility-item">
               <div className="facility-icon bg-info">
                 <span className="bg-info" />
                 <i className="fa fa-chalkboard-teacher fa-3x text-info" />
@@ -90,8 +90,8 @@ export default function Facilities() {
                 <h3 className="text-info mb-3">STEM</h3>
                 <p className="mb-0">Hands-on projects can be a great way to help kindergarteners develop problem-solving, perseverance, and even cooperation. Stem experience can clearly do wonders for social skills and life skills in general too.</p>
               </div>
-            </div> */}
             </div>
+            </div> */}
           </div>
         </div>
       </div>
