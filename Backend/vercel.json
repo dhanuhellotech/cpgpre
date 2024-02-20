@@ -1,0 +1,32 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "server.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      { "handle": "filesystem" },
+      { "src": "/api/send-reset-email", "dest": "/server.js" },
+      { "src": "/api/Addmission", "dest": "/server.js" },
+      { "src": "/api/contact", "dest": "/server.js" },
+      { "src": "/api/franschise", "dest": "/server.js" },
+      { "src": "/api/enquiry", "dest": "/server.js" },
+      { "src": "/addresses", "dest": "/server.js" },
+      { "src": "/contacts", "dest": "/server.js" },
+      { "src": "/franschise", "dest": "/server.js" },
+      { "src": "/enquiry", "dest": "/server.js" },
+      { "src": "/Addmission", "dest": "/server.js" },
+      { "src": "/calendar", "dest": "/server.js" },
+      { "src": "/teachers", "dest": "/server.js" },
+      { "src": "/newsletter", "dest": "/server.js" },
+      { "src": "/classes", "dest": "/server.js" },
+
+      { "src": "/(.*)", "dest": "/server.js" }
+    ],
+    "env": {
+      "MONGODB_URI": "@dhanalakshmihellotech:lbXKBJugIDBkvIrG@cluster0.vzg4i8n.mongodb.net/Gpreschool_local"
+    }
+  }
+  
