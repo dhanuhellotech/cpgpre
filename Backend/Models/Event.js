@@ -9,7 +9,9 @@ const eventSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  imageUrl: String,
+  imageUrl: {
+    type:String,
+  },
   category: {
     type: String,
     required: true,
