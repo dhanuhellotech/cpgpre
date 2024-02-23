@@ -30,8 +30,8 @@ app.use('/api', addressRoutes);
 
 // MongoDB connection
 mongoose.connect(
-  "mongodb+srv://dhanalakshmihellotech:lbXKBJugIDBkvIrG@cluster0.vzg4i8n.mongodb.net/Gpreschool_local",
-  { useNewUrlParser: true, useUnifiedTopology: true }
+  "mongodb+srv://dhanalakshmihellotech:lbXKBJugIDBkvIrG@cluster0.vzg4i8n.mongodb.net/Gpreschool_local"
+
 ).then(() => {
   console.log('Connected to MongoDB');
 });
