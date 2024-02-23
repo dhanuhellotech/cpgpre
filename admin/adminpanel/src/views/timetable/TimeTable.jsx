@@ -14,14 +14,14 @@ const TimeTable = () => {
   }, []);
 
   const fetchTimetable = () => {
-    axios.get('http://localhost:5678/getAll')
+    axios.get('http://localhost:5678/time/getAll')
       .then(response => setTimetable(response.data))
       .catch(error => console.error('Error fetching timetable:', error));
   };
 
   const handleDelete = async (timetableId) => {
     try {
-      const response = await axios.delete(`http://localhost:5678/delete/${timetableId}`);
+      const response = await axios.delete(`http://localhost:5678/time/delete/${timetableId}`);
       console.log('Response:', response.data);
       fetchTimetable();
     } catch (error) {
@@ -34,12 +34,12 @@ const TimeTable = () => {
       if (editingEntryId) {
         // If editing an entry, send a request to update the existing entry
         const updatedEntry = { day, date, subjects };
-        await axios.put(`http://localhost:5678/edit/${editingEntryId}`, updatedEntry);
+        await axios.put(`http://localhost:5678/time/edit/${editingEntryId}`, updatedEntry);
         setEditingEntryId(null); // Reset editing state
       } else {
         // If not editing, send a request to create a new entry
         const newEntry = { day, date, subjects };
-        await axios.post('http://localhost:5678/timetable', newEntry);
+        await axios.post('http://localhost:5678/time/timetable', newEntry);
       }
       
       clearForm();

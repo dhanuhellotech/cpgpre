@@ -17,7 +17,7 @@ export default function Timetable() {
 
   const fetchTimetable = async () => {
     try {
-      const response = await axios.get('http://localhost:5678/getAll');
+      const response = await axios.get('http://localhost:5678/top/getAll');
       setTimetableEntries(response.data);
     } catch (error) {
       console.error('Error fetching timetable:', error);

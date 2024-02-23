@@ -14,14 +14,14 @@ const Tobbar = () => {
   }, []);
 
   const fetchTobbar = () => {
-    axios.get('http://localhost:5678')
+    axios.get('http://localhost:5678/top')
       .then(response => setTobbar(response.data))
       .catch(error => console.error('Error fetching tobbar:', error));
   };
 
   const handleDelete = async (tobbarId) => {
     try {
-      const response = await axios.delete(`http://localhost:5678/${tobbarId}`);
+      const response = await axios.delete(`http://localhost:5678/top/${tobbarId}`);
       console.log('Response:', response.data);
       fetchTobbar();
     } catch (error) {
@@ -39,11 +39,11 @@ const Tobbar = () => {
 
       if (editingEntryId) {
         // If editing an entry, send a request to update the existing entry
-        await axios.put(`http://localhost:5678/${editingEntryId}`, newTobbar);
+        await axios.put(`http://localhost:5678/top/${editingEntryId}`, newTobbar);
         setEditingEntryId(null); // Reset editing state
       } else {
         // If not editing, send a request to create a new entry
-        await axios.post('http://localhost:5678', newTobbar);
+        await axios.post('http://localhost:5678/top', newTobbar);
       }
 
       clearForm();

@@ -12,7 +12,7 @@ export default function Navbar() {
   }, []);
 
   const fetchTobbar = () => {
-    axios.get('http://localhost:5678')
+    axios.get('http://localhost:5678/top')
       .then(response => setTobbar(response.data))
       .catch(error => console.error('Error fetching tobbar:', error));
   };

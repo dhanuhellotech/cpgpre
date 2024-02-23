@@ -15,6 +15,13 @@ const blogRoutes = require('./Router/blogRoutes');
 const addressRoutes = require('./Router/addressRoutes');
 const userRoutes = require('./Router/userRoutes');
 const calendarPdfRouter = require('./Router/calendarPdfRoute');
+const eventRoutes  = require('./Router/eventRoutes')
+const calendarRoutes =require('./Router/calendarRoutes');
+const  teacherRoutes= require('./Router/teacherRoutes');
+const newsletterRoutes = require('./Router/newsletterRoutes');
+const classRoutes = require('./Router/classRoutes');
+const timetableRoutes = require('./Router/timetableRoutes');
+const topbarRoutes= require('./Router/tobbarRouter');
 const username = 'gpreeschool@gmail.com'; // Replace with actual username
 const password = 'gpreeschool@gmail.com';
 // Middleware
@@ -27,7 +34,17 @@ app.use('/uploads', express.static('uploads'));
 app.use('/blogs', blogRoutes);
 app.use('/calendar-pdf', calendarPdfRouter);
 app.use('/api', addressRoutes);
+app.use('/events', eventRoutes);
 
+// blog
+app.use('/blogs', blogRoutes); 
+
+app.use('/calendar', calendarRoutes);
+app.use('/teachers', teacherRoutes); 
+app.use('/newsletter', newsletterRoutes)
+app.use('/classes',classRoutes)
+app.use('/time', timetableRoutes);
+app.use('/top',topbarRoutes)
 // MongoDB connection
 mongoose.connect(
   "mongodb+srv://dhanalakshmihellotech:lbXKBJugIDBkvIrG@cluster0.vzg4i8n.mongodb.net/Gpreschool_local"

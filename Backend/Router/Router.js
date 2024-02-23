@@ -39,15 +39,15 @@ router.delete("/Addmission/:id", admissionController.deleteByAdmissionId);
   // Function to send email
 
 //event
-router.use('/events', eventRoutes);
+// router.use('/events', eventRoutes);
 
-// blog
-router.use('/blogs', blogRoutes); 
+// // blog
+// router.use('/blogs', blogRoutes); 
 
-router.use('/calendar', calendarRoutes);
-router.use('/teachers', teacherRoutes); 
-router.use('/newsletter', newsletterRoutes)
-router.use('/classes',classRoutes)
-router.use('/', timetableRoutes);
-router.use('/',topbarRoutes)
+// router.use('/calendar', calendarRoutes);
+// router.use('/teachers', teacherRoutes); 
+// router.use('/newsletter', newsletterRoutes)
+// router.use('/classes',classRoutes)
+// router.use('/', timetableRoutes);
+// router.use('/',topbarRoutes)
 module.exports = router;
